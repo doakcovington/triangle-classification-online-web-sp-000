@@ -23,13 +23,10 @@ class Triangle
   end#end of kind
 
   def valid?
-    if kind == :equilateral || kind == :isosceles || kind == :scalene
-      true
-    elsif @side_1 == 0 && @side_2 == 0 && @side_3 == 0
-      raise TriangleError
+    if @side_1 == 0 && @side_2 == 0 @side_3 == 0
+
     end
-    binding.pry
-  end#end of valid
+  end
 
   class TriangleError < StandardError
   end
