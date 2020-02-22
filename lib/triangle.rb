@@ -26,9 +26,7 @@ class Triangle
     if kind == :equilateral || kind == :isosceles || kind == :scalene
       true
     else
-      begin
-        raise TriangleError
-      end
+      raise TriangleError
     end
     binding.pry
   end#end of valid
