@@ -28,5 +28,6 @@ class Triangle
     else
       false
     end
-  end
+  end#end of valid
+
 end
