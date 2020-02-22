@@ -22,7 +22,7 @@ class Triangle
     end#end of if
   end#end of kind
 
-  def valid
+  def valid?
     if kind == :equilateral || kind == :isosceles || kind == :scalene
       true
     else
