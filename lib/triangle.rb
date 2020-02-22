@@ -23,7 +23,7 @@ class Triangle
   end#end of kind
 
   def valid?
-    if @side_1 == 0 && @side_2 == 0 @side_3 == 0
+    if @side_1 == 0 || @side_2 == 0 || @side_3 == 0
       raise TriangleError
     end
   end
