@@ -20,4 +20,12 @@ class Triangle
       :scalene
     end#end of if
   end#end of kind
+
+  def valid
+    if kind == :equilateral || kind == :isosceles || kind == :scalene
+      true
+    else
+      false
+      
+  end
 end
