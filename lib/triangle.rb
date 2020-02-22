@@ -28,6 +28,7 @@ class Triangle
     else
       false
     end
+    binding.pry
   end#end of valid
 
 end
