@@ -4,6 +4,7 @@ class Triangle
   # write code here
 
   attr_accessor :a, :b, :C
+
   def initialize(a,b,c)
     @a = a
     @b = b
@@ -11,7 +12,9 @@ class Triangle
   end
 
   def kind
-
+    if a == 0 || b == 0 || c == 0
+      raise TriangleError
+    end
   end
 
   class TriangleError < StandardError
