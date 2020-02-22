@@ -26,7 +26,6 @@ class Triangle
     if kind == :equilateral || kind == :isosceles || kind == :scalene
       true
     elsif @side_1 == 0 && @side_2 == 0 && @side_3 == 0
-
       raise TriangleError
     end
     binding.pry
